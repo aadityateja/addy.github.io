@@ -1,0 +1,80 @@
+/* Retro OS look - simple & clean */
+:root{
+  --bg: linear-gradient(180deg,#7db9ff,#bfe9ff);
+  --panel: #e9eef6;
+  --title: #0b3b6f;
+  --accent: #0057b7;
+  --shadow: rgba(0,0,0,0.25);
+  --glass: rgba(255,255,255,0.85);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family: "Segoe UI", Tahoma, sans-serif;background:var(--bg);color:#032a3a;}
+
+#desktop{height:100%;display:flex;flex-direction:column;}
+
+/* top bar */
+#topbar{
+  height:42px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 12px;
+  background:rgba(255,255,255,0.85);
+  border-bottom:2px solid rgba(0,0,0,0.06);
+  box-shadow: 0 2px 6px var(--shadow);
+}
+.brand{font-weight:700;color:var(--title)}
+.clock{font-size:13px;color:#033a56}
+
+/* icons area */
+#icons{flex:1;padding:20px;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
+.icon{width:92px;text-align:center;cursor:pointer;user-select:none}
+.icon img{width:48px;height:48px;display:block;margin:0 auto 6px;border-radius:6px;background:var(--glass);padding:6px;box-shadow:0 2px 6px rgba(0,0,0,0.15)}
+.icon div{font-size:13px;color:#043b52}
+
+/* windows */
+.window{
+  position:absolute;
+  width:420px;
+  min-height:160px;
+  background:var(--panel);
+  border:2px solid var(--accent);
+  box-shadow: 6px 8px 18px rgba(0,0,0,0.25);
+  border-radius:4px;
+  overflow:hidden;
+  z-index: 20;
+  left:120px; top:100px;
+}
+.titlebar{
+  height:34px;
+  background:linear-gradient(#d4e6ff,#a8d0ff);
+  color:var(--title);
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 8px;
+  font-weight:700;
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  cursor:move;
+}
+.controls button{
+  margin-left:6px;
+  background:#ffefef;border:1px solid #c8c8c8;padding:2px 6px;border-radius:3px;cursor:pointer;font-weight:700;
+}
+.win-body{padding:12px;color:#043b52;background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.45))}
+
+/* dock */
+#dock{
+  height:46px;background:rgba(255,255,255,0.9);display:flex;align-items:center;gap:8px;padding:6px 12px;border-top:2px solid rgba(0,0,0,0.06)
+}
+.dock-item{padding:6px 10px;background:rgba(0,0,0,0.04);border-radius:4px;cursor:pointer;font-weight:600;color:#033a56}
+
+/* footer */
+#footer{font-size:12px;padding:8px 12px;color:#043b52;text-align:right;background:transparent}
+
+/* responsive */
+@media (max-width:700px){
+  .window{width:92%;left:4%;top:80px}
+  #icons{justify-content:center}
+}
