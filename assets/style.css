@@ -57,3 +57,36 @@ h1 {
   box-shadow: 0 0 12px #00cfff3c;
   transform: translateY(-5px);
 }
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: black;
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: white;
+}
+
+#starfield {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
