@@ -1,151 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Addy | Physics Geek</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Addy — Physics Geek</title>
   <style>
-    body {
+    /* Simple site: light-blue background + Times New Roman font */
+    html,body {
+      height: 100%;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background: #0d0d0d;
-      color: #f5f5f5;
-      line-height: 1.6;
+      font-family: "Times New Roman", Times, serif;
+      background: #cfeffd;    /* soft light blue */
+      color: #052a3a;         /* dark teal for contrast */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="research.html">Research</a>
-  <a href="contact.html">Contact</a>
-</nav>
-    header {
-      padding: 80px 20px;
-      text-align: center;
-      background: radial-gradient(circle, #1a1a1a 0%, #000000 100%);
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      color: #bbbbbb;
-    }
-
-    section {
-      padding: 60px 20px;
+    /* Container */
+    .wrap {
       max-width: 900px;
-      margin: auto;
+      margin: 32px auto;
+      padding: 24px;
     }
 
-    h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2.2rem;
-      color: #00c3ff;
+    /* Navbar */
+    nav {
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      margin-bottom: 26px;
     }
-
-    .card {
-      background: #1a1a1a;
-      padding: 20px;
-      border-radius: 10px;
-      margin-bottom: 20px;
-      border: 1px solid #222;
-    }
-
-    a {
-      color: #00c3ff;
+    nav a {
       text-decoration: none;
+      color: #052a3a;
+      border-bottom: 1px solid transparent;
+      padding-bottom: 2px;
+      font-weight: 500;
+    }
+    nav a:hover {
+      border-bottom-color: #052a3a;
     }
 
-    footer {
+    header {
       text-align: center;
-      padding: 40px;
-      color: #888;
+      margin-bottom: 20px;
+    }
+    h1 { margin: 6px 0; font-size: 2.4rem; }
+    .tag { color: #0b4b5a; opacity: 0.9; }
+
+    /* Card blocks */
+    .card {
+      background: rgba(255,255,255,0.65);
+      border-radius: 8px;
+      padding: 18px;
+      margin-bottom: 16px;
+      box-shadow: 0 2px 6px rgba(5,42,58,0.06);
+    }
+
+    h2 { margin-top: 6px; color: #053a4a; font-size: 1.4rem; }
+    p { margin: 10px 0; line-height: 1.5; }
+
+    /* Footer */
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: #084e60;
       font-size: 0.9rem;
+      opacity: 0.95;
+    }
+
+    /* Responsive */
+    @media (max-width:600px){
+      .wrap { padding: 14px; margin: 18px; }
+      h1 { font-size: 1.8rem; }
+      nav { gap: 12px; }
     }
   </style>
 </head>
-
 <body>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
-  <header>
-    <h1>Hi, I'm Addy</h1>
-    <p class="tagline">Physics geek • Particle Physics • QCD • High Energy Stuff • Cosmology</p>
-  </header>
+    <header>
+      <h1>Addy — Physics Geek</h1>
+      <div class="tag">QCD • EIC • Neutron Stars • Curiosity</div>
+    </header>
 
-  <section>
-    <h2>About Me</h2>
-    <div class="card">
+    <section class="card">
+      <h2>Welcome</h2>
       <p>
-        I'm an MSc Physics student obsessed with the beautiful chaos of the universe —  
-        from Quantum Chromodynamics to the Electron–Ion Collider, neutron stars,  
-        quark–gluon plasma, gravitational waves and everything that makes reality weird.
+        Hello — this is a simple, clean site with a soft light-blue background and
+        <strong>Times New Roman</strong> everywhere. Use this page to introduce yourself,
+        link to projects, or add quick notes about your research.
       </p>
+    </section>
+
+    <section class="card">
+      <h2>Quick Links</h2>
       <p>
-        I explore research problems, build intuition, break my head over equations,  
-        and occasionally write things that sound profound.
+        • <a href="projects.html">Projects</a><br>
+        • <a href="research.html">Research</a><br>
+        • <a href="contact.html">Contact</a>
       </p>
-    </div>
-  </section>
+    </section>
 
-  <section>
-    <h2>My Physics Domains</h2>
-    <div class="card">
-      <p>⚛️ High Energy Physics (HEP)</p>
-      <p>🌀 Quantum Chromodynamics (QCD)</p>
-      <p>🔥 Quark–Gluon Plasma</p>
-      <p>🌌 Cosmology & Dark Matter</p>
-      <p>🌠 Neutron Stars & Extreme Matter</p>
-      <p>🌐 Electron–Ion Collider (EIC)</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Projects & Research</h2>
-    <div class="card">
-      <strong>📡 Dissertation Work:</strong>
+    <section class="card">
+      <h2>Mini CV</h2>
       <p>
-        Working on the Electron–Ion Collider (EIC) and its detector physics.  
-        Studying how we probe the structure of matter at unprecedented energies.
+        MSc Physics — focus on particle & nuclear physics. Working on Electron–Ion Collider topics,
+        detector physics and QCD notes. Add your education / experience here.
       </p>
-    </div>
+    </section>
 
-    <div class="card">
-      <strong>📘 Reading Interests:</strong>
-      <p>
-        Gauge theory, symmetry breaking, QFT, modelling extreme astrophysical systems,  
-        and occasionally game-theoretic ideas in physics.
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <div class="card">
-      <p>You can reach me at:</p>
-      <p>📧 <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      <p>🐙 GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></p>
-    </div>
-  </section>
-
-  <footer>
-    © 2025 Addy — Built with pure HTML & CSS | Hosted on GitHub Pages
-  </footer>
-
+    <footer>
+      © 2025 Addy • Hosted on GitHub Pages
+    </footer>
+  </div>
 </body>
 </html>
-<link rel="stylesheet" href="assets/style.css">
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="research.html">Research</a>
-  <a href="contact.html">Contact</a>
-</nav>
-
