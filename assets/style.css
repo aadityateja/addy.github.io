@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #0a0a0f;
+  color: #eaeaea;
+}
+
+/* NAVBAR */
+nav {
+  background: rgba(20, 20, 30, 0.9);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  border-bottom: 1px solid #333;
+  backdrop-filter: blur(8px);
+}
+
+nav a {
+  color: #88e0ff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.25s;
+  text-shadow: 0 0 8px #00cfff;
+}
+
+nav a:hover {
+  color: white;
+  text-shadow: 0 0 16px #00e5ff;
+  transform: scale(1.08);
+}
+
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 2.6rem;
+  color: #00dbff;
+  text-shadow: 0 0 12px #00dbff;
+}
+
+.card {
+  background: #12121a;
+  border: 1px solid #1f1f2e;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  border-color: #00cfff;
+  box-shadow: 0 0 12px #00cfff3c;
+  transform: translateY(-5px);
+}
