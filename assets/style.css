@@ -41,4 +41,10 @@ body {
 }
 body {
     background-color: red;
+
+
+/* Audio player styling */
+.audio-player {
+    text-align: center;   /* centers the audio player */
+    margin: 20px 0;       /* adds spacing above and below */
 }
