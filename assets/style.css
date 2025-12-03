@@ -48,8 +48,8 @@ body {
 }
 body {
     background-color: red;
-    color: white;
+    color: blue;
 
 .left a {
-    color: darkblue;   /* or any color you want */
+    color: blue;   /* or any color you want */
 }
